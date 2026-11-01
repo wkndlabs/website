@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/wrangler.json",
+  "name": "website",
+  "compatibility_date": "2026-10-23",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}

@@ -15,6 +15,6 @@
 /fonts/*
   Cache-Control: public, max-age=86400
 
-# Keep the production *.pages.dev alias out of search results.
-https://:project.pages.dev/*
+# Keep the *.workers.dev address out of search results.
+https://:project.:subdomain.workers.dev/*
   X-Robots-Tag: noindex

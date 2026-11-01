@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "preview": "pnpm build && pnpm dlx wrangler pages dev out",
+    "preview": "pnpm build && pnpm dlx wrangler dev",
     "lint": "next lint"
   },
   "dependencies": {
