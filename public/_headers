@@ -1,0 +1,20 @@
+/*
+  Strict-Transport-Security: max-age=63072000
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Next.js build assets have content-hashed filenames.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images and fonts keep stable filenames, so they must be able to update.
+/static/*
+  Cache-Control: public, max-age=86400
+
+/fonts/*
+  Cache-Control: public, max-age=86400
+
+# Keep the production *.pages.dev alias out of search results.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex

@@ -1,13 +1,9 @@
 module.exports = {
+  output: 'export',
   reactStrictMode: true,
+  // Static hosting has no image optimization server; images are served as-is from public/.
+  images: { unoptimized: true },
   experimental: {
     optimizePackageImports: ['radix-ui'],
-  },
-  async redirects() {
-    return [
-      { source: '/projects', destination: '/work', permanent: true },
-      { source: '/careers', destination: '/about', permanent: true },
-      { source: '/contact', destination: '/#contact', permanent: true },
-    ];
   },
 }
